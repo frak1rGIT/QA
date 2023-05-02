@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "822aa534-d8ab-4d42-b089-233dd6fd4a75",
+		"name": "GET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26380656"
+	},
+	"item": [
+		{
+			"name": "get_projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{api}}/get_projects",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"get_projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_project info by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{api}}/get_project/23",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"get_project",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{pwd}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{email}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
