@@ -27,6 +27,15 @@ Windows проект для бизнес коммуникации-тестиро
 ![GitHUB](https://img.shields.io/badge/-github-090909?style=for-the-badge&logo=github)
 ![DevTools](https://img.shields.io/badge/Devtools-090909?style=for-the-badge&logo=googlechrome)
 
+### Testing Documentation
+
+- [Checklists](https://github.com/frak1rGIT/QA/tree/main/checklists)
+- [Test-Suites and Test-Cases](https://github.com/frak1rGIT/QA/tree/main/test%20cases)
+- [Bug-Reports](https://github.com/https://github.com/frak1rGIT/QA/tree/main/bug-reports)
+- [Postman Collections](https://github.com/frak1rGIT/QA/tree/main/collections/postman)
+- [Qase Collections](https://github.com/frak1rGIT/QA/tree/main/collections/qase)
+- [Load Testing](https://github.com/frak1rGIT/QA/tree/main/load)
+
 ### Follow Me
 [![Telegram](https://img.shields.io/badge/-Telegram-090909?style=for-the-badge&logo=Telegram)](https://t.me/frak1r)
 [![LinkedIn](https://img.shields.io/badge/-Linkedin-090909?style=for-the-badge&logo=LinkedIn)](https://www.linkedin.com/in/ilyarum/)
