@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "8afef0a4-dbcc-4c40-8748-ac3846176da5",
+		"name": "POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26380656"
+	},
+	"item": [
+		{
+			"name": "add_project \"Project X\"",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "minAD#@1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "frakpwd@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Project X\",\r\n    \"announcement\": \"Hello World!\",\r\n    \"show_announcement\": true,\r\n    \"suite_mode\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{$guid}}/{{api}}/add_project",
+					"host": [
+						"{{$guid}}"
+					],
+					"path": [
+						"{{api}}",
+						"add_project"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Project X",
+							"disabled": true
+						},
+						{
+							"key": "announcement",
+							"value": "Welcome to project X",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_project TP1 without show description",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "minAD#@1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "frakpwd@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TP1 without show description\",\r\n    \"announcement\": \"hello world\",\r\n    \"show_announcement\": true,\r\n    \"suite_mode\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/{{api}}/add_project",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"add_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_project TP2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "minAD#@1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "frakpwd@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TP2\",\r\n    \"announcement\": \"\",\r\n    \"show_announcement\": false,\r\n    \"suite_mode\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/{{api}}/add_project",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"add_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_project TP3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "minAD#@1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "frakpwd@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test project 3\",\r\n    \"announcement\": \"Welcome to project X\",\r\n    \"show_announcement\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/{{api}}/add_project",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"add_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_project TP2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "minAD#@1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "frakpwd@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://frak1r.testrail.io/index.php?/api/v2/delete_project/8",
+					"protocol": "https",
+					"host": [
+						"frak1r",
+						"testrail",
+						"io"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "/api/v2/delete_project/8",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"announcement\": \"Happy Holidays Everyone!\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/{{api}}/update_project/2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"update_project",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "minAD#@1",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "frakpwd@gmail.com",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
