@@ -1,3 +1,5 @@
+[![Header](https://github.com/AlexeyShpavda/alexeyshpavda/blob/master/assets/header.png)]
+
 Меняю сферу работы, потому что достиг потолка в текущей сфере и не вижу путей развития.
 Есть желание учиться, расти и создавать что-то новое и качественное.
 
