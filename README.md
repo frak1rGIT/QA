@@ -26,6 +26,10 @@ Windows проект для бизнес коммуникации-тестиро
 ![Quse](https://img.shields.io/badge/-Qase-090909?style=for-the-badge&logo=Quase)
 ![GitHUB](https://img.shields.io/badge/-github-090909?style=for-the-badge&logo=github)
 ![DevTools](https://img.shields.io/badge/Devtools-090909?style=for-the-badge&logo=googlechrome)
+![YouTrack](https://img.shields.io/badge/-YouTrack-090909?style=for-the-badge&logo=YouTrack)
+![Jira](https://img.shields.io/badge/-Jira-090909?style=for-the-badge&logo=Jira)
+![Confluence](https://img.shields.io/badge/-Confluence-090909?style=for-the-badge&logo=Confluence)
+![ADB](https://img.shields.io/badge/ADB-090909?style=for-the-badge&logo=ADB)
 
 ### Testing Documentation
 
