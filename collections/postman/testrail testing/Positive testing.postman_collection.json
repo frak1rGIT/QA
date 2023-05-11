@@ -7,6 +7,385 @@
 	},
 	"item": [
 		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "add_project clear project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{pwd}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{email}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test project\",\r\n    \"announcement\": \"11052023 start pos test\",\r\n    \"show_announcement\": true,\r\n    \"suite_mode\": 1\r\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/{{api}}/add_project",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"add_project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/get_project/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"get_project",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/get_projects",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"get_projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"chenge name with Postman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/{{api}}/update_project/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"update_project",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/delete_project/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"delete_project",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cases",
+			"item": [
+				{
+					"name": "add_case",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"This is a test case\",\r\n    \"type_id\": 1,\r\n    \"priority_id\": 3,\r\n    \"estimate\": \"3m\",\r\n    \"refs\": \"RF-1, RF-2\",\r\n    \"custom_steps_separated\": [\r\n        {\r\n            \"content\": \"Step 1\",\r\n            \"expected\": \"Expected Result 1\"\r\n        },\r\n        {\r\n            \"content\": \"Step 2\",\r\n            \"expected\": \"Expected Result 2\"\r\n        },\r\n        {\r\n            \"shared_step_id\": 3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/{{api}}/add_case/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"add_case",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_case success",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/get_case/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"get_case",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_cases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/get_cases/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"get_cases",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_history_for_case",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/get_history_for_case/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"get_history_for_case",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "copy_cases_to_section",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/copy_cases_to_section/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"copy_cases_to_section",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_case",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"priority_id\": 1,\r\n    \"estimate\": \"3m\"\r\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/{{api}}/update_case/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"update_case",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "move_cases_to_section",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/move_cases_to_section/C1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"move_cases_to_section",
+								"C1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_case",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/delete_case/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"delete_case",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Case Fields",
+			"item": [
+				{
+					"name": "get_case_fields",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/get_case_fields",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"get_case_fields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_case_field",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{api}}/add_case_field",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{api}}",
+								"add_case_field"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Create new project.max charactets name",
 			"request": {
 				"method": "POST",
@@ -174,12 +553,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "minAD#@1",
+							"value": "{{pwd}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "frakpwd@gmail.com",
+							"value": "{{email}}",
 							"type": "string"
 						}
 					]
@@ -201,6 +580,25 @@
 						"{{api}}",
 						"delete_project",
 						"{{projectID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{api}}/get_project/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{api}}",
+						"get_project",
+						"1"
 					]
 				}
 			},
